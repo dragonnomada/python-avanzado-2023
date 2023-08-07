@@ -1,0 +1,20 @@
+============================= test session starts ==============================
+platform linux -- Python 3.8.10, pytest-7.4.0, pluggy-1.2.0
+benchmark: 4.0.0 (defaults: timer=time.perf_counter disable_gc=False min_rounds=5 min_time=0.000005 max_time=1.0 calibration_precision=10 warmup=False warmup_iterations=100000)
+rootdir: /mnt/d/GitHub/python-avanzado-2023/c101
+plugins: benchmark-4.0.0
+collected 1 item
+
+test_evolve.py .                                                         [100%]
+
+
+---------------------------------------------- benchmark: 1 tests ---------------------------------------------
+Name (time in ms)         Min      Max     Mean  StdDev   Median     IQR  Outliers      OPS  Rounds  Iterations
+---------------------------------------------------------------------------------------------------------------
+test_evolve_pro       10.3480  14.1111  10.8215  0.4497  10.7158  0.2981       8;6  92.4082      96           1
+---------------------------------------------------------------------------------------------------------------
+
+Legend:
+  Outliers: 1 Standard Deviation from Mean; 1.5 IQR (InterQuartile Range) from 1st Quartile and 3rd Quartile.
+  OPS: Operations Per Second, computed as 1 / Mean
+============================== 1 passed in 2.10s ===============================
