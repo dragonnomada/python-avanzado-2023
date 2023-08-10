@@ -11,6 +11,8 @@
 # En otros lenguajes existe la posibilidad de crear dos métodos del mismo
 # nombre con diferentes parámetros a esto se le llama sobrecarga
 
+from math import sqrt
+
 class Particle:
 
     # x = ?
@@ -31,7 +33,8 @@ class Particle:
         return "({:.2f}, {:.2f}) <{:.4f}>".format(self.x, self.y, self.ang_vel)
     
     def norm(self):
-        return (self.x ** 2 + self.y ** 2) ** 0.5
+        # return (self.x ** 2 + self.y ** 2) ** 0.5
+        return sqrt(self.x * self.x + self.y * self.y)
 
 # Podemos hacer comprobaciones con condicionales, 
 # pero tendríamos que generar una excepción manualmente
@@ -63,14 +66,18 @@ class ParticleSimulator:
 
         for _ in range(nsteps):
             for particle in self.particles:
-                v_x = -particle.y / particle.norm()
-                v_y = particle.x / particle.norm()
+                # v_x = -particle.y / particle.norm()
+                # v_y = particle.x / particle.norm()
 
-                d_x = timestep * particle.ang_vel * v_x
-                d_y = timestep * particle.ang_vel * v_y
+                # d_x = timestep * particle.ang_vel * v_x
+                # d_y = timestep * particle.ang_vel * v_y
 
-                particle.x += d_x
-                particle.y += d_y
+                # particle.x += d_x
+                # particle.y += d_y
+
+                # CÓDIGO OPTIMIZADO
+                r = particle.norm()
+                particle.x, particle.y = particle.x + timestep * particle.ang_vel * (-particle.y) / r, particle.x + timestep * particle.ang_vel * (particle.x) / r
 
     def __str__(self):
         text = "--- PARTICLE SIMULATOR ---\n"
@@ -96,3 +103,53 @@ if __name__ == '__main__':
     sim1.evolve(0.1)
 
     print(sim1)
+
+class Robot:
+
+    x = 0
+    y = 0
+    d = 0 # 0 - NORTE, 1 - ESTE, 2 - SUR, 3 - OESTE
+
+    def avanzar(self):
+        if self.d == 0:
+            self.y += 1
+        elif self.d == 1:
+            self.x += 1
+        elif self.d == 2:
+            self.y -= 1
+        elif self.d == 3:
+            self.x -= 1
+
+    def girar_izquierda(self):
+        if self.d == 0:
+            self.d = 3
+        elif self.d == 1:
+            self.d = 0
+        elif self.d == 2:
+            self.d = 1
+        elif self.d == 3:
+            self.d = 2
+
+    def girar_derecha(self):
+        if self.d == 0:
+            self.d = 1
+        elif self.d == 1:
+            self.d = 2
+        elif self.d == 2:
+            self.d = 3
+        elif self.d == 3:
+            self.d = 0
+
+    def __str__(self):
+        label = "DESCONOCIDO"
+
+        if self.d == 0:
+            label = "NORTE"
+        elif self.d == 1:
+            label = "ESTE"
+        elif self.d == 2:
+            label = "SUR"
+        elif self.d == 3:
+            label = "OESTE"
+
+        return f"({self.x}, {self.y}) [{label}]"

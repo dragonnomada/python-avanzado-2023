@@ -1,0 +1,20 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.11.4, pytest-7.4.0, pluggy-1.2.0
+benchmark: 4.0.0 (defaults: timer=time.perf_counter disable_gc=False min_rounds=5 min_time=0.000005 max_time=1.0 calibration_precision=10 warmup=False warmup_iterations=100000)
+rootdir: /Users/dragonnomada/Desktop/python-avanzado-2023/d101
+plugins: benchmark-4.0.0
+collected 1 item
+
+c4_pytest_simulador.py .                                                 [100%]
+
+
+------------------------------------------- benchmark: 1 tests ------------------------------------------
+Name (time in s)        Min     Max    Mean  StdDev  Median     IQR  Outliers     OPS  Rounds  Iterations
+---------------------------------------------------------------------------------------------------------
+test_sim             6.0360  6.0882  6.0526  0.0208  6.0488  0.0207       1;0  0.1652       5           1
+---------------------------------------------------------------------------------------------------------
+
+Legend:
+  Outliers: 1 Standard Deviation from Mean; 1.5 IQR (InterQuartile Range) from 1st Quartile and 3rd Quartile.
+  OPS: Operations Per Second, computed as 1 / Mean
+============================== 1 passed in 43.46s ==============================
