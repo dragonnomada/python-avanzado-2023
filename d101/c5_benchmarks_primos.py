@@ -1,5 +1,5 @@
 #
-# Podemos usar `python3 -m cProfile c5_benchmarks_simulador.py`
+# Podemos usar `python3 -m cProfile c5_benchmarks_primos.py`
 #
 
 def calcular_primos(total):

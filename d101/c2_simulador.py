@@ -66,18 +66,18 @@ class ParticleSimulator:
 
         for _ in range(nsteps):
             for particle in self.particles:
-                # v_x = -particle.y / particle.norm()
-                # v_y = particle.x / particle.norm()
+                v_x = -particle.y / particle.norm()
+                v_y = particle.x / particle.norm()
 
-                # d_x = timestep * particle.ang_vel * v_x
-                # d_y = timestep * particle.ang_vel * v_y
+                d_x = timestep * particle.ang_vel * v_x
+                d_y = timestep * particle.ang_vel * v_y
 
-                # particle.x += d_x
-                # particle.y += d_y
+                particle.x += d_x
+                particle.y += d_y
 
                 # CÓDIGO OPTIMIZADO
-                r = particle.norm()
-                particle.x, particle.y = particle.x + timestep * particle.ang_vel * (-particle.y) / r, particle.x + timestep * particle.ang_vel * (particle.x) / r
+                #r = particle.norm()
+                #particle.x, particle.y = particle.x + timestep * particle.ang_vel * (-particle.y) / r, particle.x + timestep * particle.ang_vel * (particle.x) / r
 
     def __str__(self):
         text = "--- PARTICLE SIMULATOR ---\n"
