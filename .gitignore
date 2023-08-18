@@ -1,6 +1,12 @@
 # OSX
 .DS_Store
 
+# Datasets demasiado pesados
+spotify_top_200.csv
+
+# Solución a ejecicios
+e101/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
