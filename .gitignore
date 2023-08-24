@@ -1,8 +1,12 @@
 # OSX
 .DS_Store
 
+# Visual Code
+.vscode
+
 # Datasets demasiado pesados
 spotify_top_200.csv
+output/
 
 # Solución a ejecicios
 e101/
