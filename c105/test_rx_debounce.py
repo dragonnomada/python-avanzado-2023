@@ -1,12 +1,12 @@
 from reactivex import interval
 from reactivex import operators
 
-source = interval(0.15)
+source = interval(0.15) # A (150ms) [0, 1, 2, 3, ...]
 
-source_count = interval(1)
+source_count = interval(1) # B (1,000ms) [0, 1, 2, 3, ...]
 
-debounced_source = source.pipe(
-    operators.throttle_first(1)
+debounced_source = source.pipe( # A' (1,000ms) 
+    operators.throttle_first(1) # 150ms -> 1,000ms 
 )
 
 zip_count_debounced = source_count.pipe(
