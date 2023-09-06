@@ -8,20 +8,21 @@
 
 from multiprocessing import Pool
 
-pool1 = Pool(processes=2) # Limitamos el números máximos a ejecutarse
-
 def task(id):
-    # from time import sleep
-    # print(f"La tarea {id} ha comenzado a ejecutarse...")
-    # sleep(5)
-    # print(f"La tarea {id} ha finalizado :D")
+    from time import sleep
+    print(f"La tarea {id} ha comenzado a ejecutarse...")
+    sleep(5)
+    print(f"La tarea {id} ha finalizado :D")
     return 100 * id
 
-# outputs = pool1.map(task, [1, 2, 3]) # inputs = [1, 2, 3]
+if __name__ == "__main__":
+    pool1 = Pool(processes=4) # Limitamos el números máximos a ejecutarse
 
-outputs_async = pool1.map_async(task, [1, 2, 3])
+    # outputs = pool1.map(task, [1, 2, 3]) # inputs = [1, 2, 3]
 
-outputs = outputs_async.get()
+    outputs_async = pool1.map_async(task, [1, 2, 3])
 
-print(outputs) # [100, 200, 300]
+    outputs = outputs_async.get()
+
+    print(outputs) # [100, 200, 300]
 
