@@ -1,0 +1,30 @@
+[
+    {
+        "id": 611604861,
+        "name": "Producto 994",
+        "description": "Sin descripci\u00f3n",
+        "price": 9940.0,
+        "units": 1988.0
+    },
+    {
+        "id": 637966616,
+        "name": "Producto 996",
+        "description": "Sin descripci\u00f3n",
+        "price": 9960.0,
+        "units": 1992.0
+    },
+    {
+        "id": 622842392,
+        "name": "Producto 997",
+        "description": "Sin descripci\u00f3n",
+        "price": 9970.0,
+        "units": 1994.0
+    },
+    {
+        "id": 477539834,
+        "name": "Producto 999",
+        "description": "Sin descripci\u00f3n",
+        "price": 9990.0,
+        "units": 1998.0
+    }
+]

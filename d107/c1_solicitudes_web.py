@@ -19,6 +19,7 @@
 #    Consulta: https://developer.mozilla.org/es/docs/Web/HTTP/Status
 #
 #    Entre los más comunes son:
+#
 #    200 - OK (respuesta exitósa)
 #    301 - Redirect/Move Permanently (redirecciona o otro sitio)
 #    400 - Bad request (petición incorrecta o con errores)
