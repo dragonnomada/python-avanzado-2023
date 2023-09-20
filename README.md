@@ -6,6 +6,24 @@
 
 Profesor: [Alan Badillo Salas](alan@nomadacode.com)
 
+## Instrucciones Cierre de Curso
+
+> .1 Realizar el examen final disponible en [https://forms.office.com/r/Rs4NZrqe9D](https://forms.office.com/r/Rs4NZrqe9D)
+
+O en la URL completa:
+
+[https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAYAACM43dNUQ0xHV001VzdDOFU2NTc2R1dXU0NDMzQ1Si4u](https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAYAACM43dNUQ0xHV001VzdDOFU2NTc2R1dXU0NDMzQ1Si4u)
+
+**IMPORTANTE:** Tienes hasta día Míercoles, 20 de Septiembre de 2023. El día Jueves, 21 de Septiembre durante el transcurso de la mañana será inhabilitada la URL y ya no podrás entregarlo quedando sin calificación, tendrás que justificar algún caso especial por correo, pero no es recomendable y correrás el riesgo de quedar sin calificación.
+
+> .2 Entregar los ejercicios realizados durante el curso por correo a [dragonnomada123@gmail.com](mailto:dragonnomada123@gmail.com)
+
+Deberás entregar **al menos 5 ejercicios** para obtener una calificación. A partir del 6to ejercicio serás considerado para la tabla de ponderación y destacamiento sobre los alumnos de alto desempeño. Estará mejor posicionado aquél que haya entregado más ejercicios y estén mejor documentados.
+
+Considera que los ejercicios que no contengan comentarios o parezcan generados por CHATGPT o similar, podrían ser descartados. De buscar soluciones, deberás comprenderlas y comentar que hace dicho código, para demostrar dominio del ejercicio.
+
+**ÉXITO EN SU EXAMEN y muchas gracias por su participación 🥳**
+
 ## Introducción
 
 En este curso aprenderás:
